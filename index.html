@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="iziToast.min.css" rel="stylesheet">
+    <script src="iziToast.min.js"></script>
+    <title>VideoMix</title>
+</head>
+<body>
+    <div id="video-mix-app">
+        <div class="iziToast-wrapper iziToast-wrapper-topRight"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>window.SpaceId = '61';
+    window.fpt = '';
+    window.SpaceIdHash = '7b5cff9f8e84053506f4e1ab19da456717c1f82fcdfef6759347387bad4aea4d';
+    window.SpaceWebsoketServer = 'dev.halk.ai';
+    window.TELEPORT_ENABLE = true
+    window.UserData = {
+        "admin": "0",
+        "moder": true,
+        "language": "ru",
+        "phone": "48793124987",
+        "login": "vaskovvany1",
+        "access": 100,
+        "access_name": "\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440",
+        "email": "vaskov.vany1@gmail.com",
+        "fio": "\u0418\u0432\u0430\u043d \u0412\u0430\u0441\u043a\u043e\u0432\u0438\u0447",
+        "id": "2969585",
+        "sex": "0",
+        "ip": "146.70.97.203",
+        "leadId": 34844793,
+        "regtime": "2023-10-17 07:57:04",
+        "countryCode": "RU",
+        "sid": 17976195,
+        "hash_mac_id": "2969585",
+        "hash_mac": "55ac00de890aa3f8469ef4a5e9cd6431fdf7bcdb62b0af21d552343047378e79",
+        "ws_hash_mac": "2969585_55ac00de890aa3f8469ef4a5e9cd6431fdf7bcdb62b0af21d552343047378e79",
+        "payed_system": 0,
+        "is_develop": true
+    }
+
+    function show_message(color, text, title) {
+        if (typeof title == 'undefined') {
+            title = '';
+        }
+        var toast = document.querySelector('.iziToast');
+        if (toast) {
+            iziToast.hide({}, toast);
+        }
+        iziToast.show({
+            message: text,
+            color: color,
+            displayMode: 'replace',
+            position: 'topRight',
+            title: title
+        });
+    }
+    </script>
+</body>
+</html>

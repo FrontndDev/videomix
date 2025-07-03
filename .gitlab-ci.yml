@@ -1,0 +1,3 @@
+include:
+  - project: 'halk-ai/front/shared'
+    file: 'gitlab/.gitlab-ci.yml'

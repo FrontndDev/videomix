@@ -1,0 +1,32 @@
+.success-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .success-upload {
+        gap: 30px;
+
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & > button {
+                width: 100% !important;
+            }
+        }
+    }
+}

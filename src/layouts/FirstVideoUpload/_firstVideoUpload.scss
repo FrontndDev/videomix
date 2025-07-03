@@ -1,0 +1,128 @@
+.first-video {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 223px 1fr;
+        gap: 40px;
+        padding: 24px 0;
+    }
+
+    &__without-video {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: 300;
+
+        & > span:first-child {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &__select-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        height: 100%;
+
+        &-buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__checkboxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 48px;
+        width: fit-content;
+
+        & > div {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.upload__video {
+
+    &-mobile {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .first-video {
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 16px;
+            padding: 12px 0 24px;
+        }
+
+        &__without-video {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 32px;
+        }
+
+        &__select-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 24px;
+            height: 100%;
+
+            &-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                & > button {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__checkboxes {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+
+            & > div {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .upload__video {
+
+        &-desktop {
+            display: none;
+        }
+
+        &-mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

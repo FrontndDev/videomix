@@ -1,0 +1,41 @@
+.second-video {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 223px 1fr;
+        gap: 40px;
+        padding: 24px 0;
+    }
+}
+
+.upload__video {
+
+    &-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .second-video {
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+            padding: 12px 0 24px;
+        }
+    }
+
+    .upload__video {
+
+        &-desktop {
+            display: none;
+        }
+
+        &-mobile {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}
